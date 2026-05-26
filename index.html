@@ -331,42 +331,48 @@
   </section>
 
   <!-- FORMULARIO DE CONTACTO -->
-  <section class="contacto" id="contacto">
-    <div class="container">
-      <p class="section-eyebrow center">¡Reserva Ya!</p>
-      <h2 class="section-title center">Tu primera clase es <span class="yellow">GRATIS</span></h2>
-      <div class="contacto-grid">
-
-        <!-- ✅ id="contactoForm" y SIN action ni method -->
-        <form class="contact-form" id="contactoForm">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="nombre">Nombre *</label>
-              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+  <section class="py-5 bg-black" id="contacto">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="text-warning fw-semibold text-uppercase mb-1">¡Reserva Ya!</p>
+      <h2 class="text-white fw-bold">Tu primera clase es <span class="text-warning">GRATIS</span></h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="card border-0 p-4 p-md-5" style="background:#1a1a1a;border-radius:20px">
+          <form id="contactoForm" class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label for="nombre" class="form-label text-white fw-semibold">Nombre *</label>
+              <input type="text" class="form-control form-control-lg bg-dark text-white border-secondary"
+                id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+              <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
             </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">Correo electrónico *</label>
-              <input type="email" id="email" name="email" placeholder="tucorreo@email.com" required />
+            <div class="mb-3">
+              <label for="email" class="form-label text-white fw-semibold">Correo electrónico *</label>
+              <input type="email" class="form-control form-control-lg bg-dark text-white border-secondary"
+                id="email" name="email" placeholder="tucorreo@email.com" required>
+              <div class="invalid-feedback">Ingresa un correo válido.</div>
             </div>
-            <div class="form-group">
-              <label for="telefono">Teléfono / WhatsApp *</label>
-              <input type="tel" id="telefono" name="telefono" placeholder="0998765432" required />
+            <div class="mb-4">
+              <label for="telefono" class="form-label text-white fw-semibold">Teléfono / WhatsApp *</label>
+              <input type="tel" class="form-control form-control-lg bg-dark text-white border-secondary"
+                id="telefono" name="telefono" placeholder="0998765432" required>
+              <div class="invalid-feedback">Ingresa tu número de teléfono.</div>
             </div>
-          </div>
-
-          <button type="submit" class="btn btn-primary full-width">¡Quiero mi Clase Gratis! 🥊</button>
-
-          <!-- ✅ display:none por defecto -->
-          <div class="form-success" id="formSuccess" style="display:none;">
-            ✅ ¡Mensaje enviado! Te contactaremos pronto.
-          </div>
-        </form>
-
+            <div class="d-grid">
+              <button type="submit" class="btn btn-warning btn-lg fw-bold rounded-pill">
+                ¡Quiero mi Clase Gratis! 🥊
+              </button>
+            </div>
+            <div id="formSuccess" class="alert alert-success mt-3 d-none">
+              ✅ ¡Mensaje enviado! Te contactaremos pronto.
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- PIE DE PAGINA -->
  <!-- FOOTER -->
